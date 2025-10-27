@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mood Music App</h1>
+    <div class="container">
+        <div class="video-container">
+            <video id="video" width="640" height="480" autoplay muted></video>
+        </div>
+        <div class="mood-container">
+            <h2>Current Mood: <span id="mood"></span></h2>
+        </div>
+        <div class="music-container">
+            <h3>Now Playing:</h3>
+            <audio id="audio" controls></audio>
+        </div>
+        <div class="mood-history-container">
+            <h3>Mood History:</h3>
+            <ul id="mood-history"></ul>
+        </div>
+        <div class="manual-override-container">
+            <h3>Manual Mood Override:</h3>
+            <select id="manual-mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="neutral">Neutral</option>
+            </select>
+            <button id="override-btn">Override</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
